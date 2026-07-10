@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sweet Pharmacy — Лечебна козметика и добавки</title>
+<meta name="description" content="Sweet Pharmacy — професионален онлайн магазин за лечебни шампоани, дерматологична козметика и хранителни добавки." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='11' fill='%232f6f5e'/%3E%3Cpath d='M12 6v12M6 12h12' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Announcement bar -->
+<div class="announce">Безплатна доставка над 60 лв · Консултация с фармацевт при всяка поръчка</div>
+
+<!-- Header -->
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="#top" class="logo">
+      <span class="logo-mark" aria-hidden="true">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+          <circle cx="15" cy="15" r="14" stroke="currentColor" stroke-width="1.4"/>
+          <path d="M15 8v14M8 15h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="logo-text">Sweet <em>Pharmacy</em></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#shop">Продукти</a>
+      <a href="#categories">Категории</a>
+      <a href="#trust">Защо ние</a>
+      <a href="#contact">Контакти</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Търсене">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <button class="icon-btn cart-btn" id="cartToggle" aria-label="Кошница">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21 8H6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="21" r="1.4" fill="currentColor"/><circle cx="18" cy="21" r="1.4" fill="currentColor"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="icon-btn burger" id="navToggle" aria-label="Меню">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="search-bar" id="searchBar">
+    <div class="container">
+      <input type="text" id="searchInput" placeholder="Търсете шампоан, добавка, крем..." autocomplete="off" />
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Дерматологично тествана грижа</p>
+        <h1>Наука за <span>кожата и косата</span>, поднесена с грижа</h1>
+        <p class="hero-lede">Лечебни шампоани, дерматокозметика и добавки, подбрани от фармацевт — за коса, кожа и имунитет, на които може да се разчита всеки ден.</p>
+        <div class="hero-cta">
+          <a href="#shop" class="btn btn-primary">Разгледай продуктите</a>
+          <a href="#trust" class="btn btn-ghost">Защо Sweet Pharmacy</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>100%</strong><span>Дерматологично тествани</span></div>
+          <div><strong>4.9/5</strong><span>Оценка от клиенти</span></div>
+          <div><strong>24ч</strong><span>Бърза доставка</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-blob"></div>
+        <div class="hero-card hero-card--1">
+          <span class="pill">Best seller</span>
+          <p>Anti-Hairloss<br/>Шампоан</p>
+        </div>
+        <div class="hero-card hero-card--2">
+          <span class="pill pill--gold">Ново</span>
+          <p>Omega-3<br/>Капсули</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Категории</p>
+        <h2>Грижа, подредена по нужда</h2>
+      </div>
+      <div class="category-grid stagger reveal" id="categoryGrid"></div>
+    </div>
+  </section>
+
+  <!-- Shop -->
+  <section class="shop" id="shop">
+    <div class="container">
+      <div class="section-head section-head--row reveal">
+        <div>
+          <p class="eyebrow">Продукти</p>
+          <h2>Избрано за вас</h2>
+        </div>
+        <div class="filter-row" id="filterRow">
+          <button class="filter-chip is-active" data-filter="all">Всички</button>
+        </div>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>Няма продукти, отговарящи на търсенето.</p>
+    </div>
+  </section>
+
+  <!-- Trust / About -->
+  <section class="trust reveal" id="trust">
+    <div class="container trust-inner">
+      <div class="trust-media" aria-hidden="true">
+        <div class="trust-frame">
+          <svg viewBox="0 0 200 200" width="100%" height="100%">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0" stop-color="#2f6f5e"/>
+                <stop offset="1" stop-color="#c9a15a"/>
+              </linearGradient>
+            </defs>
+            <circle cx="100" cy="100" r="92" fill="url(#g1)" opacity="0.14"/>
+            <circle cx="100" cy="100" r="60" fill="none" stroke="#2f6f5e" stroke-width="1.4" opacity="0.5"/>
+            <path d="M100 46v108M46 100h108" stroke="#2f6f5e" stroke-width="1.4" opacity="0.5"/>
+            <circle cx="100" cy="100" r="10" fill="#2f6f5e"/>
+          </svg>
+        </div>
+      </div>
+      <div class="trust-copy">
+        <p class="eyebrow">Защо Sweet Pharmacy</p>
+        <h2>Фармацевтична експертиза, не маркетинг</h2>
+        <p class="trust-lede">Всеки продукт в нашия каталог минава през преглед на съставки от екип фармацевти. Без агресивни съставки, без празни обещания — само формули, които работят.</p>
+        <ul class="trust-list">
+          <li><strong>Проверени формули</strong><span>Активни съставки в клинично доказани концентрации.</span></li>
+          <li><strong>Консултация при поръчка</strong><span>Отговаряме на въпроси преди и след покупка.</span></li>
+          <li><strong>Дискретна доставка</strong><span>Опаковка без надписи, плащане при доставка.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Отзиви</p>
+        <h2>Доверие, изградено с резултати</h2>
+      </div>
+      <div class="testimonial-grid stagger reveal">
+        <blockquote>
+          <p>„След два месеца употреба на серума против косопад видях реална разлика. Консултацията преди поръчка ме успокои напълно.“</p>
+          <cite>Мария Т.</cite>
+        </blockquote>
+        <blockquote>
+          <p>„Шампоанът за чувствителна кожа на главата е единственият, който не ми предизвиква сърбеж. Поръчвам трети път.“</p>
+          <cite>Иван Д.</cite>
+        </blockquote>
+        <blockquote>
+          <p>„Добавките пристигнаха за един ден, а опаковката беше дискретна. Професионално обслужване от начало до край.“</p>
+          <cite>Ралица П.</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter reveal" id="contact">
+    <div class="container newsletter-inner">
+      <div>
+        <h2>Съвети за кожа и коса, директно във вашата поща</h2>
+        <p>Веднъж месечно — без спам, само полезно съдържание от нашите фармацевти.</p>
+      </div>
+      <form id="newsletterForm" class="newsletter-form">
+        <input type="email" id="newsletterEmail" placeholder="вашият имейл" required />
+        <button type="submit" class="btn btn-primary">Абонирай се</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="logo-text">Sweet <em>Pharmacy</em></span>
+      <p>Онлайн аптека за лечебна козметика и добавки. Грижа, изградена на наука.</p>
+    </div>
+    <div>
+      <h4>Магазин</h4>
+      <a href="#shop">Всички продукти</a>
+      <a href="#categories">Категории</a>
+      <a href="#trust">За нас</a>
+    </div>
+    <div>
+      <h4>Помощ</h4>
+      <a href="#contact">Контакти</a>
+      <a href="#">Доставка и плащане</a>
+      <a href="#">Връщане на продукт</a>
+    </div>
+    <div>
+      <h4>Контакт</h4>
+      <a href="tel:+35921234567">+359 2 123 4567</a>
+      <a href="mailto:info@sweetpharmacy.bg">info@sweetpharmacy.bg</a>
+      <p class="footer-address">гр. София, бул. „Витоша“ 45</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span id="year"></span> Sweet Pharmacy. Всички права запазени.</p>
+    <p class="footer-note">Продуктите не заместват консултация с лекар.</p>
+  </div>
+</footer>
+
+<!-- Cart drawer -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Кошница">
+  <div class="drawer-head">
+    <h3>Вашата кошница</h3>
+    <button class="icon-btn" id="cartClose" aria-label="Затвори">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div class="drawer-items" id="cartItems"></div>
+  <div class="drawer-empty" id="cartEmpty">
+    <p>Кошницата ви е празна.</p>
+    <a href="#shop" class="btn btn-ghost" id="cartEmptyCta">Разгледай продукти</a>
+  </div>
+  <div class="drawer-footer" id="drawerFooter">
+    <div class="drawer-total">
+      <span>Общо</span>
+      <strong id="cartTotal">0.00 лв</strong>
+    </div>
+    <button class="btn btn-primary btn-block" id="checkoutBtn">Завърши поръчката</button>
+  </div>
+</aside>
+
+<!-- Checkout modal -->
+<div class="modal-overlay" id="checkoutOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+    <button class="icon-btn modal-close" id="checkoutClose" aria-label="Затвори">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+    <h3 id="checkoutTitle">Завършване на поръчка</h3>
+    <p class="modal-sub">Плащане с наложен платеж. Ще получите потвърждение по телефон.</p>
+    <form id="checkoutForm">
+      <div class="form-row">
+        <label>Име и фамилия
+          <input type="text" name="name" required />
+        </label>
+      </div>
+      <div class="form-row form-row--split">
+        <label>Телефон
+          <input type="tel" name="phone" required />
+        </label>
+        <label>Имейл
+          <input type="email" name="email" required />
+        </label>
+      </div>
+      <div class="form-row">
+        <label>Адрес за доставка
+          <input type="text" name="address" required />
+        </label>
+      </div>
+      <div class="form-row">
+        <label>Град
+          <input type="text" name="city" required />
+        </label>
+      </div>
+      <div class="checkout-summary" id="checkoutSummary"></div>
+      <button type="submit" class="btn btn-primary btn-block">Потвърди поръчката</button>
+    </form>
+  </div>
+</div>
+
+<!-- Success toast -->
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
