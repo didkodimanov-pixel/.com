@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Avangard — Маркетинг агенция | Meta ADS, Социални мрежи, Уебсайтове</title>
+    <link rel="icon" type="image/jpeg" href="images/favicon.jpg">
+    <meta name="description" content="Avangard е дигитална маркетинг агенция в България. Управляваме Meta реклами, профили в социалните мрежи и изработваме уебсайтове.">
+    <meta name="keywords" content="Meta ADS, Facebook реклама, Instagram реклама, управление на социални мрежи, изработка на уебсайтове, дигитален маркетинг">
+    <meta name="author" content="Avangard">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://avangard.co/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Avangard — Маркетинг агенция">
+    <meta property="og:description" content="Дигитална маркетинг агенция в България.">
+    <meta property="og:url" content="https://avangard.co/">
+    <meta property="og:site_name" content="Avangard">
+    <meta property="og:locale" content="bg_BG">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Avangard — Маркетинг агенция">
+    <meta name="twitter:description" content="Дигитална маркетинг агенция в България.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/good-times-2" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        setTimeout(function(){
+            var o=document.getElementById('introOverlay');
+            if(o){o.style.display='none';}
+            document.body.style.overflow='';
+            document.documentElement.style.overflow='';
+        },8000);
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+    <script src="https://unpkg.com/split-type@0.3.4/umd/index.min.js" defer></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Avangard",
+        "description": "Дигитална маркетинг агенция в България.",
+        "url": "https://avangard.co",
+        "areaServed": {"@type": "Country", "name": "България"},
+        "serviceType": ["Meta реклами", "Управление на социални мрежи", "Изработка на уебсайтове"]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="music/background.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Intro Overlay -->
+    <div class="intro-overlay" id="introOverlay">
+        <div class="intro-letters">
+            <img src="images/logo.png" alt="" class="intro-overlay-logo">
+            <span class="intro-letter">A</span>
+            <span class="intro-letter">V</span>
+            <span class="intro-letter">A</span>
+            <span class="intro-letter">N</span>
+            <span class="intro-letter">G</span>
+            <span class="intro-letter">A</span>
+            <span class="intro-letter">R</span>
+            <span class="intro-letter">D</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header" id="siteHeader">
+        <div class="header-inner">
+            <button class="logo-btn" aria-label="Avangard">
+                <img src="images/logo.png" alt="" class="logo-img">
+                <svg class="logo-svg" viewBox="0 0 550 42" height="28" style="width:auto">
+                    <text x="0" y="34" fill="currentColor" font-family="'Good Times Rg', sans-serif" font-weight="400" font-size="32" letter-spacing="0.04em">AVANGARD</text>
+                </svg>
+            </button>
+            <button class="lang-toggle" id="langToggle" aria-label="Language">
+                <span class="lang-toggle-bg"></span>
+                <span class="lang-toggle-label">EN</span>
+            </button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Меню">
+                <span class="menu-toggle-bg"></span>
+                <span class="menu-toggle-label">Меню</span>
+                <svg class="menu-toggle-icon menu-toggle-hamburger" viewBox="0 0 19 9" fill="none">
+                    <path d="M0 0.5h19M0 8.5h13" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+                <svg class="menu-toggle-icon menu-toggle-close" viewBox="0 0 19 19" fill="none">
+                    <path d="M1 1l17 17M18 1L1 18" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-menu-nav">
+            <a href="#work" class="mobile-menu-link" data-t="nav_portfolio">Портфолио</a>
+            <a href="#services" class="mobile-menu-link" data-t="nav_services">Услуги</a>
+            <a href="#about" class="mobile-menu-link" data-t="nav_about">За нас</a>
+            <a href="#contact" class="mobile-menu-link" data-t="nav_contact">Контакт</a>
+        </nav>
+    </div>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero" id="hero">
+            <div class="hero-bg">
+                <div class="hero-bg-fill"></div>
+                <video class="hero-video" autoplay muted loop playsinline>
+                    <source src="videos/hero-video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="hero-content">
+                <div class="hero-bottom">
+                    <div class="hero-bottom-inner">
+                        <p class="hero-tagline" data-t="hero_tagline">Водени от Дизайна и AI</p>
+                        <button class="hero-scroll-btn" aria-label="Scroll">
+                            <svg viewBox="0 0 14 14" width="15" height="15" fill="none">
+                                <path d="M7 0v14M1 7l6 6 6-6" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Intro Section -->
+        <section class="intro-section" id="intro">
+            <div class="intro-fade-overlay" id="introFade"></div>
+            <div class="site-max">
+                <div class="intro-grid">
+                    <div class="intro-media-col">
+                        <div class="media-wrap">
+                            <div class="media-fill intro-media-bg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-text-row">
+                    <div class="intro-text-content">
+                        <h2 class="h4" data-t="intro_text">
+                            Като специалисти в дигиталния маркетинг, ние помагаме на нашите клиенти да се адаптират и да ускорят растежа си<em>
+                            —трансформирайки техните платформи, хора и процеси, за да водят на пазара.
+                            </em>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="gallery-section" id="gallery">
+            <div class="gallery-heading-overlay">
+                <div class="gallery-heading-gradient"></div>
+                <div class="gallery-heading-text">
+                    <h3 class="h2 js-t" data-t="gallery_heading">
+                        Изграждаме следващото поколение<em>умни преживявания.</em>
+                    </h3>
+                </div>
+            </div>
+            <div class="gallery-grid-wrap">
+                <div class="gallery-tiles">
+                    <div class="gallery-col gallery-col-1">
+                        <div class="gallery-tile js-gallery-tile"><div class="media-fill tile-1"></div></div>
+                        <div class="gallery-tile js-gallery-tile"><div class="media-fill tile-2"></div></div>
+                        <div class="gallery-tile js-gallery-tile"><div class="media-fill tile-3"></div></div>
+                    </div>
+                    <div class="gallery-col gallery-col-2">
+                        <div class="gallery-tile js-gallery-tile"><div class="media-fill tile-4"></div></div>
+                        <div class="gallery-tile gallery-tile-wide js-gallery-tile"><div class="media-fill tile-5"></div></div>
+                        <div class="gallery-tile js-gallery-tile"><div class="media-fill tile-6"></div></div>
+                    </div>
+                    <div class="gallery-col gallery-col-3">
+                        <div class="gallery-tile js-gallery-tile"><div class="media-fill tile-7"></div></div>
+                        <div class="gallery-tile js-gallery-tile"><div class="media-fill tile-8"></div></div>
+                        <div class="gallery-tile js-gallery-tile"><div class="media-fill tile-9"></div></div>
+                    </div>
+                </div>
+                <div class="gallery-fade-overlay"></div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="case-list" id="services">
+            <div class="case-list-bg">
+                <div class="case-list-bg-fill"></div>
+            </div>
+            <div class="case-list-cards">
+                <section class="case-card">
+                    <div class="case-card-inner">
+                        <span class="body-large case-number">01</span>
+                        <h2 class="h2-alt js-t" data-t="service_1">Meta ADS<br>Реклама</h2>
+                    </div>
+                </section>
+                <section class="case-card">
+                    <div class="case-card-inner">
+                        <span class="body-large case-number">02</span>
+                        <h2 class="h2-alt js-t" data-t="service_2">Управление на<br>Социални профили</h2>
+                    </div>
+                </section>
+                <section class="case-card">
+                    <div class="case-card-inner">
+                        <span class="body-large case-number">03</span>
+                        <h2 class="h2-alt js-t" data-t="service_3">Изработка на<br>Уебсайтове</h2>
+                    </div>
+                </section>
+                <section class="case-card">
+                    <div class="case-card-inner">
+                        <span class="body-large case-number" data-t="service_4_label">Клиентски резултат</span>
+                        <h2 class="h2-alt js-t" data-t="service_4">Успешни<br>Кампании</h2>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- Statement -->
+        <section class="media-hero-exp">
+            <div class="media-hero-exp__bg">
+                <div class="media-fill media-hero-exp__bg-fill"></div>
+                <div class="media-hero-exp__bg-overlay"></div>
+            </div>
+            <div class="media-hero-exp__content">
+                <div class="site-max site-grid">
+                    <div class="col-span-2 s:col-span-2"></div>
+                    <div class="col-span-3 s:col-span-3 statement-text-col">
+                        <h3 class="h4 js-t" data-t="statement">
+                            Помагаме на бизнесите да постигнат място в ръцете, домовете и сърцата на милиони<em>
+                            —съчетавайки световноизследване, креативен дизайн и технологии, които реализират немислимото.
+                            </em>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story -->
+        <section class="storytelling" id="story">
+            <div class="site-max">
+                <div class="story-grid">
+                    <div class="story-media-1">
+                        <div class="media-fill story-img-1"></div>
+                    </div>
+                    <div class="story-media-2">
+                        <div class="media-fill story-img-2"></div>
+                    </div>
+                </div>
+                <div class="story-content">
+                    <h2 class="h4 storytelling__title js-t" data-t="story">
+                        Творческата агенция, избрана от лидери да визионира утрешния ден<em>
+                        —и да го стартира днес.
+                        </em>
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+        <div class="sf-bg"></div>
+        <div class="sf-white">
+            <div class="site-max sf-inner">
+                <div class="sf-main">
+                    <h2 class="footer-1 js-t" data-t="footer_heading">
+                        Да поговорим. <em>Ще се радваме<br>да чуем от вас.</em>
+                    </h2>
+                    <a href="mailto:hello@avangard.co" class="btn">
+                        <span class="btn-bg"></span>
+                        <span class="btn-label" data-t="footer_btn">Контакт</span>
+                    </a>
+                </div>
+                <hr class="sf-divider">
+                <div class="sf-bottom">
+                    <span>&copy; 2026 Avangard</span>
+                    <a href="#" data-t="footer_privacy">Поверителност &amp; Условия</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
